@@ -27,12 +27,18 @@ export default function CustomHeader() {
           >
             <div className='col-lg-4'></div>
             <div className={clsx(['col-lg-4', 'col-sm-6'])}>
-              <div className={clsx([menu.menuLogo])} style={{ padding: '20px' }}>
-                <center>
-                  <a href=''>
-                    <img src='https://levents.asia/wp-content/uploads/2021/10/logo.png' alt='' />
-                  </a>
-                </center>
+              <div
+                className={clsx([menu.menuLogo])}
+                style={{
+                  padding: '20px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <a href=''>
+                  <img src='https://levents.asia/wp-content/uploads/2021/10/logo.png' alt='' />
+                </a>
               </div>
             </div>
             <div className={clsx(['col-xl-4', 'col-sm-6'])}>

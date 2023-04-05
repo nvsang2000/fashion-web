@@ -1,11 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
-
 import React from 'react';
 import clsx from 'clsx';
 import slider from './slider.module.css';
 import { CustomHeader } from '~/components';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function Header() {
+  const router = useRouter();
   return (
     <div className='home'>
       <CustomHeader />
@@ -37,14 +39,14 @@ export default function Header() {
             </div>
             <div className='col-xl-3 col-sm-12 col-md-6 col-lg 6'>
               <center>
-                <a href=''>
+                <Link href='/product'>
                   <img
                     style={{ width: '300px' }}
                     src='https://levents.asia/wp-content/uploads/2023/01/z4062902873074_11115d37d843e789bd678eb1e04039ce-400x500.jpg'
                     alt=''
                   />
-                </a>
-                <p>LEVENTS® COLOR TEE/ BLACK</p>
+                </Link>
+                <p>LEVENTS® COLOR TEE/ BLACK 123</p>
                 <div>361,000 vnđ</div>
                 <div style={{ textDecoration: 'line-through' }}>380,000 vnđ</div>
               </center>
