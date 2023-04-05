@@ -1,0 +1,83 @@
+.container {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.headerTop {
+    background-color: black;
+    height: 30px;
+
+}
+
+.textLeftHeaderTop {
+    color: white;
+}
+
+.textRightHeaderTop {
+    text-align: right;
+}
+
+.textRightHeaderTop a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerMenuRight {
+    display: flex;
+}
+
+.headerMenuRight a {
+    text-decoration: none;
+}
+
+.imgMenuRight {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.textMenuRight {
+    margin-top: 27px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#menuSmall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: black;
+    margin-top: 10px;
+    padding-left: -10px;
+}
+
+.menuBar ul li {
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+
+}
+
+.menuBar ul li a {
+    color: black;
+}
+
+#toggle {
+    text-align: left;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1032px) {
+    #menuSmall {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    #navMenuBar {
+        display: none;
+    }
+}
