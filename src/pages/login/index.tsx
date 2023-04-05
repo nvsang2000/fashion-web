@@ -42,9 +42,7 @@ export default function Login() {
             </span>
           </div>
         </div>
-
         <div className={style.line}></div>
-
         <div className={style.socialLink}>
           <a href='#' className='info facebook'>
             <i className='bx bxl-facebook facebook-icon'></i>
