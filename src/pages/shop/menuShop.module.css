@@ -1,0 +1,17 @@
+.menuShop {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menuShopHeader {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.menuShopHeader .text {
+    text-decoration: none;
+    color: #706e6e;
+}
+
+.menuShopHeader .text:hover {
+    color: black;
+}

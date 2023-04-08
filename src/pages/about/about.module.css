@@ -1,0 +1,26 @@
+.headerAbout {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+
+.aboutMain {}
+
+.buttonAbout {
+    color: white;
+    border: none;
+    background-color: #656464;
+}
+
+.textAbout {
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    outline: none;
+    margin-top: 20px;
+
+
+}
+
+.textAbout:hover {
+    border-bottom: 1px solid black;
+}
