@@ -1,12 +1,9 @@
-import type { NextPage } from 'next';
 import { CustomHomeProduct, CustomSlider } from '~/components';
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div className='home'>
       <CustomSlider />
       <CustomHomeProduct />
     </div>
-  )
-};
-
-export default Home;
+  );
+}
