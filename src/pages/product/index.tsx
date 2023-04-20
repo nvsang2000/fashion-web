@@ -7,6 +7,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 export default function Header() {
   const [checked, setChecked] = useState(false);
+  const [checked2, setChecked2] = useState(false);
 
   return (
     <div>
@@ -245,11 +246,11 @@ export default function Header() {
 
                 <hr />
                 <div className='moreInfo'>
-                  <a href='#box' style={{ textDecoration: 'none', color: 'black', fontSize: '20px', fontWeight: 'bold' }} onClick={() => setChecked(!checked)}>Bảng size{' '}</a>
+                  <a href='#box' style={{ textDecoration: 'none', color: 'black', fontSize: '20px', fontWeight: 'bold' }} onClick={() => setChecked2(!checked2)}>Bảng size{' '}</a>
                 </div>
                 <hr />
                 {/* đóng mở info reactjs */}
-                {checked && (
+                {checked2 && (
                   <div id='box' className={clsx([product.textAdd1])}>
                     <h6>LEVENTS® COLOR TEE</h6>
                     <h6>

@@ -17,6 +17,9 @@ export default function CustomSlider() {
                                 </a>
                             </div>
                         </div>
+                        <div className='col-xl-12 col-sm-12' style={{ borderBottom: '1px solid #e3e3e3', paddingBottom: '30px' }}>
+                            <p style={{ textAlign: 'center', fontSize: '25px' }}>Sản Phẩm Yêu Thích</p>
+                        </div>
                     </div>
                 </div>
             </div>
