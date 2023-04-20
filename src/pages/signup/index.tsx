@@ -18,17 +18,6 @@ export default function Signup() {
     setIsChecked(!isChecked);
   };
 
-  axios({
-    method: 'GET',
-    url: 'http://localhost:3000/posts',
-    data: null,
-  })
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
 
@@ -72,7 +61,6 @@ export default function Signup() {
   // };
   return (
     <>
-      <CustomHeader />
       {/* <div>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
