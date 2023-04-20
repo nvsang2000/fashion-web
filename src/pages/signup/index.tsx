@@ -6,7 +6,7 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { CustomHeader } from '~/components';
 import axios from 'axios';
 import loginApi from './authApi';
-import axiosClient from "./axiosClient";
+import axiosClient from './axiosClient';
 import authApi from './authApi';
 export default function Signup() {
   const handleSubmitValue = (values: any) => {
@@ -18,15 +18,6 @@ export default function Signup() {
     setIsChecked(!isChecked);
   };
 
-  axios({
-    method: 'GET',
-    url: 'http://localhost:3000/posts',
-    data: null
-  }).then(res => {
-    console.log(res)
-  }).catch(err => {
-    console.log(err)
-  })
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
 
@@ -70,7 +61,6 @@ export default function Signup() {
   // };
   return (
     <>
-      <CustomHeader />
       {/* <div>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
@@ -126,6 +116,5 @@ export default function Signup() {
         </div>
       </div>
     </>
-
   );
 }
