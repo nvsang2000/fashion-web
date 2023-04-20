@@ -5,8 +5,6 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
-
-
 export default function CustomAbout() {
     return (
         <>
