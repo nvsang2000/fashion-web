@@ -1,9 +1,18 @@
-import type { AppProps } from 'next/app';
-
 import '../styles/globals.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import type { AppProps } from 'next/app';
+import { LayoutDefault } from '~/components';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+const routesNoNeedDefaultLayout = ['/login', '/signup']
+function MyApp({ Component, pageProps, ...appProps }: AppProps) {
+  if (routesNoNeedDefaultLayout.includes(appProps.router.pathname))
+    return <Component {...pageProps} />
+
+  return (
+    <LayoutDefault>
+      <Component {...pageProps} />;
+    </LayoutDefault>
+  )
 }
 
 export default MyApp;

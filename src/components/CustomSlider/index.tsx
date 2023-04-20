@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import slider from '../pages/home/slider.module.css';
+import slider from './slider.module.css';
 export default function CustomSlider() {
     return (
         <>

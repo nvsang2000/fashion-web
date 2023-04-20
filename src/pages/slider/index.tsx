@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import slider from './slider.module.css';
 import clsx from 'clsx';

@@ -1,10 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import menu from '../home/menu.module.css';
 import post from './posts.module.css';
 import React from 'react';
 import clsx from 'clsx';
-import Link from 'next/link';
-import { AiOutlineMenu } from 'react-icons/ai';
 
 export default function posts() {
     return (
