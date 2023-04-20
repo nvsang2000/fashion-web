@@ -7,14 +7,12 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { CustomHeader } from '~/components';
 import axios from 'axios';
 
-
-
 export default function Login() {
   const handleSubmitValue = (values: any) => {
     console.log('values', values);
   };
   const [isChecked, setIsChecked] = useState(false);
-  const onSubmit = data => console.log(data);
+  const onSubmit = (data) => console.log(data);
 
   const handleRadioChange = () => {
     setIsChecked(!isChecked);
@@ -23,28 +21,29 @@ export default function Login() {
 
   const [email, setEmail] = useState('');
 
-  const [password, setPassword] = useState('')
+  const [password, setPassword] = useState('');
 
   const handleEmail = (event) => {
-    setEmail(event.target.value)
-  }
+    setEmail(event.target.value);
+  };
 
   const handlePassword = (event) => {
-    setPassword(event.target.value)
-  }
+    setPassword(event.target.value);
+  };
   const handleApi = () => {
-    console.log(email, password)
-    axios.post('https://schema.getpostman.com/json/collection/v2.1.0/collection.json', {
-      email: email,
-      password: password,
-    })
-      .then(result => {
-        console.log(result.data)
+    console.log(email, password);
+    axios
+      .post('https://schema.getpostman.com/json/collection/v2.1.0/collection.json', {
+        email: email,
+        password: password,
       })
-      .catch(err => {
-        console.log(err)
+      .then((result) => {
+        console.log(result.data);
       })
-  }
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <>
       <CustomHeader />
@@ -52,7 +51,7 @@ export default function Login() {
         <div className={clsx(['form', style.formLogin])} onSubmit={handleSubmit(onSubmit)}>
           <div className={style.formContent}>
             <header>Login</header>
-            <form className='loginForm' >
+            <form className='loginForm'>
               <div className={style.info}>
                 <input onChange={handleEmail} value={email} type='email' placeholder='Email' className='email' name='email' />
               </div>
@@ -68,7 +67,9 @@ export default function Login() {
               </div>
 
               <div className={style.info}>
-                <button onClick={handleApi} type='submit'>Login</button>
+                <button onClick={handleApi} type='submit'>
+                  Login
+                </button>
               </div>
             </form>
 
@@ -98,6 +99,5 @@ export default function Login() {
         </div>
       </div>
     </>
-
   );
 }

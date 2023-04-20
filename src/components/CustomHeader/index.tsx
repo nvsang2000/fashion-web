@@ -21,10 +21,7 @@ export default function CustomHeader() {
               </div>
             </div>
           </div>
-          <div
-            className={clsx(['row', menu.menuTop])}
-            style={{ borderBottom: '1px solid #e3e3e3' }}
-          >
+          <div className={clsx(['row', menu.menuTop])} style={{ borderBottom: '1px solid #e3e3e3' }}>
             <div className='col-lg-4'></div>
             <div className={clsx(['col-lg-4', 'col-sm-6'])}>
               <div
@@ -60,47 +57,28 @@ export default function CustomHeader() {
                 </div>
                 <div className={clsx([menu.ser])}>
                   <a href=''>
-                    <img
-                      className={clsx([menu.imgMenuRight])}
-                      src='https://levents.asia/template/assets/images/svg/ic-ser.svg'
-                      alt=''
-                    />
+                    <img className={clsx([menu.imgMenuRight])} src='https://levents.asia/template/assets/images/svg/ic-ser.svg' alt='' />
                   </a>
                 </div>
                 <div className={clsx([menu.cart])}>
                   <a href=''>
-                    <img
-                      className={clsx([menu.imgMenuRight])}
-                      src='https://levents.asia/template/assets/images/svg/ic-cart.svg'
-                      alt=''
-                    />
+                    <img className={clsx([menu.imgMenuRight])} src='https://levents.asia/template/assets/images/svg/ic-cart.svg' alt='' />
                   </a>
                 </div>
                 <div className={clsx([menu.accout])}>
                   <a href=''>
-                    <img
-                      className={clsx([menu.imgMenuRight])}
-                      src='https://levents.asia/template/assets/images/svg/ic-user.svg'
-                      alt=''
-                    />
+                    <img className={clsx([menu.imgMenuRight])} src='https://levents.asia/template/assets/images/svg/ic-user.svg' alt='' />
                   </a>
                 </div>
                 <div className={clsx([menu.flag])}>
                   <a href=''>
-                    <img
-                      className={clsx([menu.imgMenuRight])}
-                      src='https://levents.asia/template/assets/images/svg/ic-vn.svg'
-                      alt=''
-                    />
+                    <img className={clsx([menu.imgMenuRight])} src='https://levents.asia/template/assets/images/svg/ic-vn.svg' alt='' />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            className={clsx(['row', menu.mainMenu])}
-            style={{ borderBottom: '1px solid #e3e3e3' }}
-          >
+          <div className={clsx(['row', menu.mainMenu])} style={{ borderBottom: '1px solid #e3e3e3' }}>
             <div className='col-xl-12'>
               <div className='wrapper'>
                 <div id='header'>

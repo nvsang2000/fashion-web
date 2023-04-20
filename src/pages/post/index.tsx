@@ -3,9 +3,9 @@ import React from 'react';
 import clsx from 'clsx';
 
 export default function posts() {
-    return (
-        <>
-            {/* <div className='headerTop'>
+  return (
+    <>
+      {/* <div className='headerTop'>
                 <div className={clsx(['container-fluid', menu.container])}>
                     <div className={clsx(['row', menu.headerTop])}>
                         <div className='col-lg-6'>
@@ -146,50 +146,49 @@ export default function posts() {
                     </div>
                 </div>
             </div> */}
-            <div className={clsx([post.posts])}>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className={clsx([post.slider])}>
-                                <div className={clsx([post.slides])}>
-                                    <input type="radio" name="radio-btn" className={clsx([post.radio1])} />
-                                    <input type="radio" name="radio-btn" className={clsx([post.radio2])} />
-                                    <input type="radio" name="radio-btn" className={clsx([post.radio3])} />
-                                    <input type="radio" name="radio-btn" className={clsx([post.radio4])} />
+      <div className={clsx([post.posts])}>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className={clsx([post.slider])}>
+                <div className={clsx([post.slides])}>
+                  <input type='radio' name='radio-btn' className={clsx([post.radio1])} />
+                  <input type='radio' name='radio-btn' className={clsx([post.radio2])} />
+                  <input type='radio' name='radio-btn' className={clsx([post.radio3])} />
+                  <input type='radio' name='radio-btn' className={clsx([post.radio4])} />
 
-                                    <div className={clsx([post.slideFirst])}>
-                                        <img src="https://levents.asia/wp-content/uploads/2022/07/homepage-ngang-scaled.jpg" alt="" />
-                                    </div>
-                                    <div className={clsx([post.slideFirst])}>
-                                        <img src="https://levents.asia/wp-content/uploads/2023/03/1920x760-1920x988.png" alt="" />
-                                    </div>
-                                    <div className={clsx([post.slideFirst])}>
-                                        <img src="https://levents.asia/wp-content/uploads/2022/07/homepage-ngang-scaled.jpg" alt="" />
-                                    </div>
-                                    <div className={clsx([post.slideFirst])}>
-                                        <img src="https://levents.asia/wp-content/uploads/2023/03/1920x760-1920x988.png" alt="" />
-                                    </div>
+                  <div className={clsx([post.slideFirst])}>
+                    <img src='https://levents.asia/wp-content/uploads/2022/07/homepage-ngang-scaled.jpg' alt='' />
+                  </div>
+                  <div className={clsx([post.slideFirst])}>
+                    <img src='https://levents.asia/wp-content/uploads/2023/03/1920x760-1920x988.png' alt='' />
+                  </div>
+                  <div className={clsx([post.slideFirst])}>
+                    <img src='https://levents.asia/wp-content/uploads/2022/07/homepage-ngang-scaled.jpg' alt='' />
+                  </div>
+                  <div className={clsx([post.slideFirst])}>
+                    <img src='https://levents.asia/wp-content/uploads/2023/03/1920x760-1920x988.png' alt='' />
+                  </div>
 
-                                    <div className={clsx([post.navigationAuto])}>
-                                        <div className={clsx([post.autoBtn1])}></div>
-                                        <div className={clsx([post.autoBtn2])}></div>
-                                        <div className={clsx([post.autoBtn3])}></div>
-                                        <div className={clsx([post.autoBtn4])}></div>
-                                    </div>
-
-                                </div>
-
-                                <div className={clsx([post.navigationManual])}>
-                                    <label htmlFor="radio1" className={clsx([post.manualBtn])}></label>
-                                    <label htmlFor="radio2" className={clsx([post.manualBtn])}></label>
-                                    <label htmlFor="radio3" className={clsx([post.manualBtn])}></label>
-                                    <label htmlFor="radio4" className={clsx([post.manualBtn])}></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <div className={clsx([post.navigationAuto])}>
+                    <div className={clsx([post.autoBtn1])}></div>
+                    <div className={clsx([post.autoBtn2])}></div>
+                    <div className={clsx([post.autoBtn3])}></div>
+                    <div className={clsx([post.autoBtn4])}></div>
+                  </div>
                 </div>
+
+                <div className={clsx([post.navigationManual])}>
+                  <label htmlFor='radio1' className={clsx([post.manualBtn])}></label>
+                  <label htmlFor='radio2' className={clsx([post.manualBtn])}></label>
+                  <label htmlFor='radio3' className={clsx([post.manualBtn])}></label>
+                  <label htmlFor='radio4' className={clsx([post.manualBtn])}></label>
+                </div>
+              </div>
             </div>
-        </>
-    )
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

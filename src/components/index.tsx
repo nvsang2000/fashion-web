@@ -4,4 +4,3 @@ import CustomHomeProduct from './CustomHomeProduct';
 import CustomFooter from './CustomFooter';
 import LayoutDefault from './LayoutDefault';
 export { CustomHeader, CustomSlider, CustomHomeProduct, CustomFooter, LayoutDefault };
-

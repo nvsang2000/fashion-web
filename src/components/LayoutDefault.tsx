@@ -1,12 +1,12 @@
-import CustomFooter from "./CustomFooter";
-import CustomHeader from "./CustomHeader";
+import CustomFooter from './CustomFooter';
+import CustomHeader from './CustomHeader';
 
 export default function LayoutDefault({ children }: any) {
-    return (
-        <>
-            <CustomHeader />
-            <main>{children}</main>
-            <CustomFooter />
-        </>
-    )
+  return (
+    <>
+      <CustomHeader />
+      <main>{children}</main>
+      <CustomFooter />
+    </>
+  );
 }

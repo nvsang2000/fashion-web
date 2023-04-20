@@ -13,10 +13,7 @@ export default function Header() {
           <div className='container-fluid'>
             <div className='row'>
               <div className='col-xl-3'></div>
-              <div
-                className='col-xl-3 col-lg-4 col-md-6 col-sm-12'
-                style={{ border: '1px solid #e3e3e3', width: '100%', height: '100%' }}
-              >
+              <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12' style={{ border: '1px solid #e3e3e3', width: '100%', height: '100%' }}>
                 <img
                   style={{ width: '100%' }}
                   src='https://levents.asia/wp-content/uploads/2023/01/z4062902778388_dc66e2b0d69a034cc54a0276848248c8-1000x1000.jpg'
@@ -88,13 +85,8 @@ export default function Header() {
                 {checked && (
                   <div id='box' className={clsx([product.textAdd])}>
                     <h6>LEVENTS® COLOR TEE</h6>
-                    <h6>
-                      Sản phẩm: LÌ VEN ORIGINAL 2.0 – Phiên bản bề mặt vải có lông, khắc phục tình
-                      trạng bị nhăn của sản phẩm.
-                    </h6>
-                    <p>
-                      Lì ven Original không lông được áp dụng cho toàn bộ sản phẩm áo thun màu đen
-                    </p>
+                    <h6>Sản phẩm: LÌ VEN ORIGINAL 2.0 – Phiên bản bề mặt vải có lông, khắc phục tình trạng bị nhăn của sản phẩm.</h6>
+                    <p>Lì ven Original không lông được áp dụng cho toàn bộ sản phẩm áo thun màu đen</p>
                     <p>Lì ven Original 2.0 có lông vẫn được áp dụng cho các áo thun màu khác</p>
                     <h6>Kích cỡ: 1/2/3/4</h6>
                   </div>
@@ -102,20 +94,21 @@ export default function Header() {
 
                 <hr />
                 <div className='moreInfo'>
-                  <a href='#box' style={{ textDecoration: 'none', color: 'black', fontSize: '20px', fontWeight: 'bold' }} onClick={() => setChecked2(!checked2)}>Bảng size{' '}</a>
+                  <a
+                    href='#box'
+                    style={{ textDecoration: 'none', color: 'black', fontSize: '20px', fontWeight: 'bold' }}
+                    onClick={() => setChecked2(!checked2)}
+                  >
+                    Bảng size{' '}
+                  </a>
                 </div>
                 <hr />
                 {/* đóng mở info reactjs */}
                 {checked2 && (
                   <div id='box' className={clsx([product.textAdd1])}>
                     <h6>LEVENTS® COLOR TEE</h6>
-                    <h6>
-                      Sản phẩm: LÌ VEN ORIGINAL 2.0 – Phiên bản bề mặt vải có lông, khắc phục tình
-                      trạng bị nhăn của sản phẩm.
-                    </h6>
-                    <p>
-                      Lì ven Original không lông được áp dụng cho toàn bộ sản phẩm áo thun màu đen
-                    </p>
+                    <h6>Sản phẩm: LÌ VEN ORIGINAL 2.0 – Phiên bản bề mặt vải có lông, khắc phục tình trạng bị nhăn của sản phẩm.</h6>
+                    <p>Lì ven Original không lông được áp dụng cho toàn bộ sản phẩm áo thun màu đen</p>
                     <p>Lì ven Original 2.0 có lông vẫn được áp dụng cho các áo thun màu khác</p>
                     <h6>Kích cỡ: 1/2/3/4</h6>
                   </div>
